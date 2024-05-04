@@ -81,7 +81,7 @@ module VagrantVbguest
         # @return [String] Absolute path to the local GuestAdditions iso file, or +nil+ if not found.
         def guess_local_iso
           Array(platform_path).find do |path|
-            path && File.exists?(path)
+            path && File.exist?(path)
           end
         end
 
