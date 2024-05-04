@@ -1,7 +1,13 @@
 # vagrant-vbguest
 
-**Please note that as of 2023-12-17, this project is archived and will not receive further updates or support from me.**  
-**However, the existing codebase will remain available for reference and use under the project's open-source license.**
+This is the fixed version of vagrant-vbguest plugin that fix `NoMethodError` on vagrant version >= 2.3.4 
+
+To build and use this plugin on your local machine run command below
+```
+gem build vagrant-vbguest.gemspec
+vagrant plugin install vagrant-vbguest-0.32.1.gem
+```
+Vagrant will install plugin from local file that builded from `gem build` command instead of fetching unmaintained vagrant-vbguest from [RubyGems](https://rubygems.org/gems/vagrant-vbguest)
 
 ---
 
